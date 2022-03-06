@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:background="#007fac"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edt1"
+    android:layout_weight="1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="추가"
+        android:id="@+id/btnInsert"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/per"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:text="성취도: "/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:text="0%"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:text="100%"/>
+        </LinearLayout>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+            android:progress="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/prog"
+            android:padding="20dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/study"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#eb9000"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:text="공부하자"/>
+
+    <DigitalClock
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/study"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clock"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/stu8"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/iv1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/before"/>
+
+        <ImageButton
+            android:id="@+id/iv2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/stop"/>
+
+        <ImageButton
+            android:id="@+id/iv3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/next"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/background"
+        android:layout_centerHorizontal="true"
+        android:text="노래1"
+        android:textSize="18dp"
+        android:textColor="#ffffff" />
+
+
+
+    <TextView
+        android:id="@+id/settingtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/breaktimebtn"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"/>
+
+
+    <Button
+        android:id="@+id/breaktimebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="#eb9000" />
+</RelativeLayout>
